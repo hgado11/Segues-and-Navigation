@@ -19,9 +19,11 @@
 		66DD25041EC4EC08003EBFF1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DD25031EC4EC08003EBFF1 /* ViewController.swift */; };
 		66DD25071EC4EC08003EBFF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66DD25051EC4EC08003EBFF1 /* Main.storyboard */; };
 		66DD250C1EC4EC08003EBFF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66DD250A1EC4EC08003EBFF1 /* LaunchScreen.storyboard */; };
+		6D5EFE02915BC7C2B12A1D7D /* Pods_Segues_and_Navigation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C94C09E5995ADAA97465B1C1 /* Pods_Segues_and_Navigation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		299B601F52BF4C7092807798 /* Pods-Segues and Navigation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Segues and Navigation.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Segues and Navigation/Pods-Segues and Navigation.debug.xcconfig"; sourceTree = "<group>"; };
 		661A26D51ECC5DEB004132C8 /* ModalWithUnwindSegueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalWithUnwindSegueViewController.swift; sourceTree = "<group>"; };
 		661A26D91ECC64D3004132C8 /* ModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
 		66A56EFC1ECF870600AEB8F4 /* BootstrapStyleModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BootstrapStyleModalViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +38,8 @@
 		66DD25081EC4EC08003EBFF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		66DD250B1EC4EC08003EBFF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		66DD250D1EC4EC08003EBFF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C651AD6344B657E7555D27FD /* Pods-Segues and Navigation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Segues and Navigation.release.xcconfig"; path = "Pods/Target Support Files/Pods-Segues and Navigation/Pods-Segues and Navigation.release.xcconfig"; sourceTree = "<group>"; };
+		C94C09E5995ADAA97465B1C1 /* Pods_Segues_and_Navigation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Segues_and_Navigation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,17 +47,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D5EFE02915BC7C2B12A1D7D /* Pods_Segues_and_Navigation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2078868C6CD4CCC557A0CB06 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C94C09E5995ADAA97465B1C1 /* Pods_Segues_and_Navigation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		66DD24F51EC4EC08003EBFF1 = {
 			isa = PBXGroup;
 			children = (
 				66DD25001EC4EC08003EBFF1 /* Segues and Navigation */,
 				66DD24FF1EC4EC08003EBFF1 /* Products */,
+				85994FBA956F6A0094BC96B5 /* Pods */,
+				2078868C6CD4CCC557A0CB06 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -85,6 +100,15 @@
 			path = "Segues and Navigation";
 			sourceTree = "<group>";
 		};
+		85994FBA956F6A0094BC96B5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				299B601F52BF4C7092807798 /* Pods-Segues and Navigation.debug.xcconfig */,
+				C651AD6344B657E7555D27FD /* Pods-Segues and Navigation.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -92,9 +116,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 66DD25101EC4EC08003EBFF1 /* Build configuration list for PBXNativeTarget "Segues and Navigation" */;
 			buildPhases = (
+				A8CE754AB5046377F5DD75ED /* [CP] Check Pods Manifest.lock */,
 				66DD24FA1EC4EC08003EBFF1 /* Sources */,
 				66DD24FB1EC4EC08003EBFF1 /* Frameworks */,
 				66DD24FC1EC4EC08003EBFF1 /* Resources */,
+				E434EB9766898F01E8B778EB /* [CP] Embed Pods Frameworks */,
+				7E8DBC77CB485C4EF9D77B17 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,6 +179,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7E8DBC77CB485C4EF9D77B17 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Segues and Navigation/Pods-Segues and Navigation-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A8CE754AB5046377F5DD75ED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Segues and Navigation-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E434EB9766898F01E8B778EB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Segues and Navigation/Pods-Segues and Navigation-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		66DD24FA1EC4EC08003EBFF1 /* Sources */ = {
@@ -289,6 +367,7 @@
 		};
 		66DD25111EC4EC08003EBFF1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 299B601F52BF4C7092807798 /* Pods-Segues and Navigation.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 97P9DZHP78;
@@ -302,6 +381,7 @@
 		};
 		66DD25121EC4EC08003EBFF1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C651AD6344B657E7555D27FD /* Pods-Segues and Navigation.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 97P9DZHP78;
